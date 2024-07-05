@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public Vector3 movement;
 
-
-
     // Use this for initialization
     void Start()
     {
@@ -25,18 +23,6 @@ public class PlayerController : MonoBehaviour
         movement = new Vector3(moveHorizontal, 0, moveVertical).normalized;
         rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
     }
-
-
-    // void FixedUpdate()
-    // {
-    //     moveCharacter(movement);
-    // }
-
-    // void moveCharacter(Vector3 direction)
-    // {
-    //     rb.velocity = direction * speed;
-    // }
-
 
 }
 
